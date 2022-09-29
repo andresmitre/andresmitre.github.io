@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Portfolio Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--================ Start Header Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav justify-content-end">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item submenu dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio
+                                            Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Portfolio Details</h2>
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!--================ End Banner Area =================-->
+
+    <!--================Start Portfolio Details Area =================-->
+    <section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img">
+                            <img class="img-fluid w-70" src="img/portfolio/p_cell.png" alt="">
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="text-sentencecase">Automatic Cell Image Segmentation
+                                Using Genetic Algorithms
+                                <a href="https://1drv.ms/b/s!As3H943b5f4lkfYZIN-OwikYU9MiRA?e=FVwhpq"
+                                    target="_blank">(source)</a>
+                            </h4>
+                            <h6 class="text-sentencecase">Keywords: cell segmentation, genetic algorithms, auto machine
+                                learning, auto tuning.</h6>
+                            <p> Cell image segmentation is a fundamental stage for
+                                cell identification process, but it is not an easy task. Several
+                                methods for cell segmentation have been proposed. However, the
+                                selection of parameters for the available algorithms depends on
+                                the cell type and finally they are designated by an expert.
+                                Whereas this approach can result in good performance, it is not
+                                necessarily the optimal and may inherit expert’s biases. <mark> We
+                                    propose in this paper an autonomous machine learning technique
+                                    for the selection of parameters in the cell image segmentation
+                                    process.</mark>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="text-sentencecase"> Proposed approach: </h3>
+                <p>In this study we are interested in parameter auto-tuning,
+                    more specifically, in a setting where the parameter space of a
+                    cell segmentation algorithm is automatically explored by a
+                    genetic algorithm. The auto-tuning process compares the
+                    results with ground truth, and the process is repeated to find a
+                    set of parameters that produces the most accurate results as
+                    measured by a comparison metric, that in our case is the F-index.</p>
+
+                <br>
+                <h4 class="text-sentencecase"> Cell segmentation algorithm </h4>
+                <p> The proposed method to distinguish between background
+                    and cell is the marker-controlled watershed (MC-Watershed).
+                    The goal of this block is to recognize as many cells as possible.
+                    A flowchart of this process is shown in Figure below. Four stages
+                    integrate the MC-Watershed: preprocessing, marking the
+                    foreground objects, computing background markers and
+                    computing Watershed transform.
+                    <center><img class="img-fluid w-70" src="img/portfolio/p_cell_procedure.png" alt=""></center>
+                </p>
+                <br>
+                <h4 class="text-sentencecase"> Fitness function </h4>
+                <p> The fitness function is based on the cell segmentation
+                    algorithm. The input vector contains the three parameters r, p
+                    and DT, which correspond to radio of the disk, number limit of
+                    the pixels to remove elements and option for the distance
+                    transform, respectively. The operations described in the
+                    flowchart in Figured above are executed. The output image Ilabel is
+                    compared with the ground truth and the F-index is obtained.
+                    This process is completed for each of the training images (10
+                    images). Then, the average F-index is calculated: it is the
+                    output of the fitness function and the value to optimize by the
+                    GA</p>
+                <br>
+                <h4 class="text-sentencecase"> Genetic Algorithm </h4>
+                <p> The GA maps each parameter of our cell segmentation
+                    algorithm to a gene of an individual. This is the input vector to
+                    the fitness function, which perform the segmentation algorithm
+                    and obtain the F-index for each individual. The initial
+                    population is created randomly and evolved using crossover
+                    and mutation. The crossover uses a one-point crossover
+                    between pairs of individuals with a probability of C. The
+                    mutation in each gene of occurs with an independent
+                    probability of M.
+                    <br>
+                <p> In the next figure, the auto-tuning process of the GA is showed. The
+                    process takes initial parameters (r, p and DT) as a constraint.
+                    The parameters are then introduced into the MC-Watershed
+                    algorithm for the cell segmentation process. Afterwards, the
+                    Ilabel (segmented image) and Ibinarized (ground truth) are used </p>
+                <center><img class="img-fluid w-70" src="img/portfolio/p_cell_ga.png" alt=""></center>
+
+                <p> In the block Binary classification, we calculate the
+                    specificity, accuracy, sensitivity, precision, Jaccard index, Dice
+                    as well of the F-index. The metric to optimize is F-index.
+                    Based on the result of the objective function value and the
+                    configuration, the GA looks for other individuals in the
+                    population, using mutation, crossover, and other operations.
+                    This process is repeated until the GA finds the parameters that
+                    produces the most accurate results for the F-index.</p>
+                <br>
+                <h4 class="text-sentencecase"> Results</h4>
+                <p>This section evaluates the auto-tuning algorithm using GA
+                    with the goal of maximizing the F-index metric. These
+                    experiments were executed with the SNP HEp-2 cell dataset.
+                    The dataset (SNPHEp-2) was obtained between January
+                    and February 2012 at Sullivan Nicolaides Pathology
+                    laboratory, Australia. This dataset contains images of five cell
+                    classes: centromere, coarse speckled, fine speckled,
+                    homogeneous, and nucleolar; and consists of 1,884 cell images
+                    extracted from 40 specimen images. DAPI image channel was
+                    used to obtain the cell image masks automatically. With the
+                    aim of validating this proposal, 40 cell images from the
+                    homogeneous class were randomly chosen.
+                </p>
+                <p>
+                    A panel with two images (000002_p2.tif and
+                    00005_p1.tif) is presented in Fig. 3 to show the improvement
+                    in segmentation output generated by the tuned versus default
+                    input parameters. This image shows that the segmented image
+                    with GA reach superior results regard to identification and
+                    correct separation of clustered cells. However, some objects
+                    were over-segmented. </p>
+                <center><img class="img-fluid w-70" src="img/portfolio/p_cell.png" alt=""></center>
+                <br>
+                <p> The performance of the GA was measured with an
+                    evaluation of binary class according to the final parameters.
+                    The images from the dataset were used for the evaluation. The
+                    following metrics were measured: specificity, accuracy,
+                    sensitivity, precision, dice and Jaccard index; these, in function
+                    of the True Positive (TP), True Negative (TN), False Positive
+                    (FP) and False Negative (FN) values.
+                    The average values of the metrics for the complete set of
+                    images are presented in The next table. The results show that the
+                    auto-tuning algorithms improved the quality of the results
+                    compared with the results generated by the default input
+                    parameters selected by the human expert, regard to F-Index
+                    and Jaccard indicator </p>
+
+                <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-color: #93a1a1;
+                        border-spacing: 0;
+                    }
+
+                    .tg td {
+                        background-color: #fdf6e3;
+                        border-color: #93a1a1;
+                        border-style: solid;
+                        border-width: 1px;
+                        color: #002b36;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg th {
+                        background-color: #657b83;
+                        border-color: #93a1a1;
+                        border-style: solid;
+                        border-width: 1px;
+                        color: #fdf6e3;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg .tg-lboi {
+                        border-color: inherit;
+                        text-align: left;
+                        vertical-align: middle
+                    }
+
+                    .tg .tg-fymr {
+                        border-color: inherit;
+                        font-weight: bold;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-0pky {
+                        border-color: inherit;
+                        text-align: left;
+                        vertical-align: top
+                    }
+                </style>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-fymr">Indicator</th>
+                            <th class="tg-fymr">Method 1</th>
+                            <th class="tg-fymr">Method 2</th>
+                            <th class="tg-0pky"><span style="font-weight:bold">Method GA</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-lboi"> <br>Precision </td>
+                            <td class="tg-0pky"> <br>0,868049033</td>
+                            <td class="tg-lboi"> <br>0,89756878 </td>
+                            <td class="tg-lboi"> <br>0,879213594 </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>Sensitivity&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi"> <br>0,856911404</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,837711863&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,853728919&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>Specificity&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi"> <br>0,973841827</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,980786459&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,976242719&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>Accuracy&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi"> <br>0,970271024 </td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,955947701&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,954925408&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>F-Index&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi"> <br>0,953385145 </td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,863037902&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,863092628&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>Jaccard&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi"> <br>0,755985697 </td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,762761452&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,762892065&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>Dicce&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-0pky"> <br>0,858631642 </td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,377202695&nbsp;&nbsp;&nbsp;</td>
+                            <td class="tg-lboi">&nbsp;&nbsp;&nbsp;<br>0,377052532&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <h4 class="text-sentencecase"> Conclusions </h4>
+                <p> Cell image segmentation algorithms are sensitive to input
+                    parameters and the selection done by human experts not always
+                    is the optimal option. The proposed auto-tuning algorithm
+                    using GA improved the indicators for cell segmentation and it
+                    produced accurate visual results. Although it may take
+                    computational time, this search method makes it easier for the
+                    programmer to select the multiple parameters of the algorithm.
+                    As a future work, we intend to apply AutoML for the full
+                    selection model problem, which not only include the tuning
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+
+    <!--================ Start Newsletter Area =================
+    <section class="newsletter_area">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-12">
+                    <div class="subscription_box text-center">
+                        <h2 class="text-uppercase text-white">get update from anywhere</h2>
+                        <p class="text-white">
+                            Bearing Void gathering light light his eavening unto dont afraid.
+                        </p>
+                        <div class="subcribe-form" id="mc_embed_signup">
+                            <form target="_blank" novalidate="true"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="subscription relative">
+                                <input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Email address'" required="" type="email">
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                        type="text">
+                                </div>
+                                <button class="primary-btn hover d-inline">Get Started</button>
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!--================ End Newsletter Area =================-->
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="footer_top flex-column">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                            <h4>Follow Me</h4>
+                        </div>
+                        <div class="footer_social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_bottom justify-content-center">
+                <p class="col-lg-8 col-sm-12 footer-text">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
+                    made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                        target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
