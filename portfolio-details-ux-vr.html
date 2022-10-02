@@ -93,218 +93,329 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="left_img">
-                            <img class="img-fluid" src="img/portfolio/p_fer.png" alt="">
+                            <img class="img-fluid" src="img/portfolio/ux-vr/p-ux-vr-gameplay.png" alt="">
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-5">
                         <div class="portfolio_right_text mt-30">
-                            <h4 class="text-sentencecase">Study of Spontaneous and Acted Learn-Related
-                                Emotions Through Facial Expressions and Galvanic Skin Response 
-                                <a href="https://www.rcs.cic.ipn.mx/2019_148_5/Study%20of%20Spontaneous%20and%20Acted%20Learn-Related%20Emotions%20Through%20Facial%20Expressions.pdf" target="_blank">(source)</a></h4>
-                                <h6 class="text-sentencecase">Keywords: Facial Expression Recognition, GSR, MobileNet, learn-related emotions, CNN.</h6>
+                            <h4 class="text-sentencecase">Model-Driven Approach of Virtual Interactive Environments for Enhanced User Experience
+                                <a href="https://www.mdpi.com/2076-3417/11/6/2804/htm" target="_blank">(source)</a></h4>
+                                <h6 class="text-sentencecase">Keywords: User Experience, Virtual Environment, Model-Driven Architecutre (MDA)</h6>
                                 <p>
-                                In learning environments emotions can activate or deactivate the learning process.
-                                Boredom, stress and happy–learn-related
-                                emotions–are included in physiological signals datasets, but not in Facial Expression
-                                Recognition (FER) datasets.
-                                In addition to this, Galvanic Skin Response (GSR) signal is the most representative data
-                                for emotions classification.
-                                This paper presents a technique to generate a dataset of facial expressions and
-                                physiological signals of spontaneous
-                                and acted-learn related emotions–boredom, stress, happy and neutral state–presented
-                                during video stimuli and face acting.
-                                <mark> We conducted an experiment with 22 participants (Mexicans); a dataset of 1,840
-                                    facial
-                                    expressions images and 1,584 GSR registers
-                                    were generated. A Convolutional Neural Network (CNN) model was trained with the
-                                    facial
-                                    expression dataset, then statistical
-                                    analysis was performed with the GSR dataset. MobileNet’s CNN reached an overall
-                                    accuracy
-                                    of 94.36% in a confusion matrix,
-                                    but the accuracy decreased to 28% for non-trained external images. The statistical
-                                    results of GSR with significant differences
-                                    in confused emotions are discussed.</mark>
-                            </p>
+                                    The video game and entertainment industry has been growing in recent years, 
+                                    particularly those related to Virtual Reality (VR). Therefore, video game creators 
+                                    are looking for ways to offer and improve realism in their applications 
+                                    in order to improve user satisfaction. In this sense, it is of great importance 
+                                    to have strategies to evaluate and improve the gaming experience in a group of people, 
+                                    without considering the fact that users have different preferences and, 
+                                    coupled with this, also seeks to achieve satisfaction in each user. 
+                                    <mark> In this work, we present a model to improve the user experience in a personal way 
+                                    through reinforcement learning (RL). Unlike other approaches, the proposed model 
+                                    adjusts parameters of the virtual environment in real-time based on user preferences,
+                                    rather than physiological data or performance. </mark> The model design is based on the Model-Driven
+                                     Architecture (MDA) approach and consists of three main phases: analysis phase, design phase,
+                                      and implementation phase. As results, a simulation experiment is presented that 
+                                      shows the transitions between undesired satisfaction states to desired satisfaction states, 
+                                      considering an approach in a personal way.
+                                </p>
                         </div>
                     </div>
                 </div>
-                <h4 class="text-sentencecase"> Experiment </h4>
-                <p>The objectives of the experiment are:</p>
-                <ul class="list">
-                    <li><span> 1. The creation of the FER and GSR datasets of acted and spontaneous emotions related to
-                            the learning process.</span> </li>
-                    <li><span> 2. The emotion classification with a CNN throughout FER.</span></li>
-                    <li><span> 3. Find significant differences in the GSR Percentage of Change (P.C) between
-                            spontaneous/acted and neutrality.</span></li>
+                <h4 class="text-sentencecase"> Model to Evaluate and Improve User Experience </h4>
+                <p>This section presents a model that allows virtual environments to be adapted to the user’s 
+                    preferences in a personal way [43,44,45,46]. This is intended to improve satisfaction and 
+                    avoid negative outcomes while interacting with the virtual environment. The model considers
+                    RL and MDA strategies in its design. For the design of the proposed model in the figure below, 
+                    it takes as a basis the fundamentals of the MDA approach for the design of virtual environments 
+                    that can be adapted to the user’s needs. The proposed model is composed of the following phases: 
+                     </p>
+                    <ul class="list">
+                    <li><span> <b>1. Computation-Independent Model (CIM)</b>, established as an <b>analysis phase</b>, in this phase the system and user tasks are defined, as well as the context tools..</span> </li>
+                    <li><span> <b>2. The Platform-Independent Model (PIM)</b>, is described as a <b>design phase</b>, in this phase the virtual environment interface and design diagrams—general system diagrams, UML model, and CTT notation—are required to define the interaction between elements and the process..</span></li>
+                    <li><span> <b>3. The Platform-Specific Model (PSM)</b>, as the <b>implementation phase</b>, which consists of the virtual environment experience, the description of the user interaction, and a testing stage from a Software Engineering (SWE) and Human–Computer Interaction (HCI) [49] perspective.</span></li>
                 </ul>
                 <br>
-                <h4 class="text-sentencecase"> Materials and Method </h4>
-                <p> To create the FER and GSR datasets, the materials we used were: Haar Featured based Cascade –a
-                    machine learning based approach where a cascade function is trained from many positive an negative
-                    images– for the face
-                    recognition developed in OpenCV; DSRL Rebel T3 Cannon Camera in order to capture the facial images;
-                    Grove GSR Sensor
-                    –measure the resistance of the human skin, the resistance is measured with two electrodes of 1/4”(6
-                    mm)
-                    dimension of nickel material attached to an electronic circuit– for the physiological data; and a
-                    22in
-                    LCD monitor.
+                <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/Thesis-Model-to-MDA.png" alt=""></center>
+                <h5 class="text-sentencecase"> Analysis phase </h5>
+                <p> As illustrated in Figure below. This phase starts with the development process to establish 
+                    the modeling in the context of the virtual environment requirements. 
+                    It is mainly composed of the determination of the requirements of the virtual environment, 
+                    the determination of the user’s needs, and the context on which the virtual environment 
+                    will be executed. The parts that make up the analysis stage are described below.
                 </p>
-                <p> An audiovisual stimuli was shown to the participant to obtain the spontaneous emotion, it consisted
-                    of a visualization of video clips from films validated by participants in diverse work related
-                    emotion. Table 1. describes the
-                    film related to the stimuli and a brief description of the scene. The stimuli from the table below
-                    was validated by 100 participants in neutral and happy stimuli
-                    , boredom was approved by two studies (study 1: 241 participants, study 2: 416 participants), and
-                    stress validated by 41 participants. On the other hand,
-                    within the acted emotions, facial expression was imitated by the participants using FACS and others
-                    proposals, for an interval of 10 seconds.
+                <br>
+                <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/Thesis-Analysis-phase.png" alt=""></center>
+                <h5 class="text-sentencecase"> Design phase </h5>
+                <p> According to the figure below, the interface is specified and then an interaction design 
+                    of the virtual environment is presented. The interface specification and interaction design 
+                    are based on the user acquisition stage of the user profile, user interaction, and user evaluation.
+                </p>
+                <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/Thesis-Design-phase.png" alt=""></center>
+                <h6 class="text-sentencecase"> Interface specification</h6>
+                <p>The interface specification concentrates on a representation of the environment. It consists of making a sketch of the user interface. </p>
+                <h6 class="text-sentencecase"> User Interaction Design</h6>
+                <p>In user interaction (formal representation of the environment), general diagrams of the environment 
+                    are made as part of the system design (UML models [53]) to represent the structure and 
+                    interaction between system elements, and a Concur Task Tree (CTT) notation [54] 
+                    that shows the process for representing and completing a task 
+                    (e.g., the steps a user has to follow to make a record or steps a 
+                    player has to follow to finish a mission). </p>
+                <h6 class="text-sentencecase"> Algorithm Design</h6>
+                <p>The core elements of the design phase are based on two stages: user profile acquisition stage, interaction stage.
+                    <b> The user profile acquisition stage: </b> To obtain user preferences, a user profile acquisition stage is required,
+                    which consists of generating different states of satisfaction (data preprocessing) 
+                    from a set of environment customization parameters (e.g., changes in environment elements, 
+                    difficulty in the environment and time to complete the objectives). To define these states, 
+                    a testing stage should be considered for a period of time, either in a dynamic demonstration or 
+                    questions in the user interface. <b>The user interaction stage: </b> it consists of the interaction 
+                    between the user and the environment, where the reinforcement learning algorithm adjusts the 
+                    virtual environment in a personal way for each user by switching between states 
+                    (e.g., missions, levels, or a set of parameters that redefine the difficulty) 
+                    that are translated into states of user satisfaction.</p>
+                <br>
+                <h5 class="text-sentencecase"> Implementation phase </h5>
+                <p> As illustrated in Figure below. This phase starts with the development process to establish 
+                    the modeling in the context of the virtual environment requirements. 
+                    It is mainly composed of the determination of the requirements of the virtual environment, 
+                    the determination of the user’s needs, and the context on which the virtual environment 
+                    will be executed. The parts that make up the analysis stage are described below.
+                </p>
+                <br>
+                <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/p-ux-vr-implementation-phase.png" alt=""></center>
+                </p>
+                <h4 class="text-sentencecase"> Implementation of Proposed Model </h4>
+                <p> This section presents the implementation of the proposed model through 
+                    the development of a virtual environment in which a reinforcement learning 
+                    algorithm that takes into account the user’s preferences is implemented. Next, 
+                    the stages proposed for the implementation under the proposed model are described.
+                </p>
+                <h5 class="text-sentencecase"> Analysis phase </h5>
+                <p> he virtual environment consists of a single-player racing video game. The video game is an adaptation 
+                    of a template named: Karting Microgame, this template is an open project racing game 
+                    available on the Unity3D platform. This template initially consists of a track 
+                    and 3 laps. Subsequently, the implementations were made to the virtual environment according 
+                    to the proposed template. The virtual environment is composed of the design of seven different tracks,
+                    as shown in Figure below. Each track presents a particular design in which the same style of its 
+                    visual elements is preserved.
+                </p>
+                <p>The player could control a cart, collect coins, and avoid obstacles. The cart can move in all directions, 
+                    jump, crash, and skid. In addition, the player has to navigate the whole track to finish the lap. 
+                    The player starts at the lap control point and has to perform 3 laps to finish a track. 
+                    During the game, the player interacts with static and dynamic elements. 
+                    In addition, the player must avoid obstacles and collect coins that appear along the way. 
+                    The player collects a coin, a coin counter that appears on the user interface changes, 
+                    and the player gets a point. The game ends when the user reaches the maximum state of satisfaction.</p>
+                <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/p-ux-vr-tracks.png" alt=""></center>   
+                <br>
+                <h5 class="text-sentencecase"> Design phase </h5>
+                <h6 class="text-sentencecase"> Environment and Algorithm Design </h6>
+                <p> In this stage, the user uses the virtual environment with the goal of the RL algorithm to help 
+                    improve the UX. First, the user enters the system, and an unpleasant state/track (s0,s1,s2) 
+                    is randomly assigned to start the interaction. During the track, the user can perform the 
+                    following interactions: collect coins along the way to obtain scores, 
+                    avoid obstacles along the way, and complete 3 laps to finish a track. 
+                    Upon completion of each track, the algorithm transitions to another state/track, 
+                    from st to st+1 and collects the data of time per lap, total time duration per track, 
+                    coins collected, and obstacles hit for further analysis. Once users reach the desired state, 
+                    interaction with the game concludes.
+                </p>
+                <h6 class="text-sentencecase"> User Profile Acquisition Stage </h6>
+                <p> At this stage, a set of states were defined based on configurable parameters, 
+                    such as speed, music, and the number of obstacles (Table below). To define the states, 
+                    test sessions were conducted with a duration of 5 min, where the player used the virtual 
+                    environment, then proceeded to generate the states of satisfaction.
                 </p>
                 <style type="text/css">
-                    .tg {
-                        border-collapse: collapse;
-                        border-color: #93a1a1;
-                        border-spacing: 0;
-                    }
-
-                    .tg td {
-                        background-color: #fdf6e3;
-                        border-color: #93a1a1;
-                        border-style: solid;
-                        border-width: 1px;
-                        color: #002b36;
-                        font-family: Arial, sans-serif;
-                        font-size: 14px;
-                        overflow: hidden;
-                        padding: 10px 5px;
-                        word-break: normal;
-                    }
-
-                    .tg th {
-                        background-color: #657b83;
-                        border-color: #93a1a1;
-                        border-style: solid;
-                        border-width: 1px;
-                        color: #fdf6e3;
-                        font-family: Arial, sans-serif;
-                        font-size: 14px;
-                        font-weight: normal;
-                        overflow: hidden;
-                        padding: 10px 5px;
-                        word-break: normal;
-                    }
-
-                    .tg .tg-1wig {
-                        font-weight: bold;
-                        text-align: left;
-                        vertical-align: top
-                    }
-
-                    .tg .tg-0lax {
-                        text-align: left;
-                        vertical-align: top
-                    }
-                </style>
-                <table class="tg">
+                    .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+                    .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
+                      font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
+                      font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg .tg-cly1{text-align:left;vertical-align:middle}
+                    .tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-yla0{font-weight:bold;text-align:left;vertical-align:middle}
+                    .tg .tg-nrix{text-align:center;vertical-align:middle}
+                    </style>
+                    <table class="tg">
                     <thead>
-                        <tr>
-                            <th class="tg-1wig">Emotion</th>
-                            <th class="tg-1wig">Film title</th>
-                            <th class="tg-1wig">Scene description</th>
-                        </tr>
+                      <tr>
+                        <th class="tg-wa1i"><span style="font-weight:700;color:#222">Parameter</span></th>
+                        <th class="tg-wa1i"><span style="font-weight:700;color:#222">Mode</span></th>
+                        <th class="tg-wa1i"><span style="font-weight:700;color:#222">Description</span></th>
+                      </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="tg-0lax">Neutral</td>
-                            <td class="tg-0lax">The lover</td>
-                            <td class="tg-0lax">Marguerite gets in a car, gets off and walks to a house</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-0lax">Happy</td>
-                            <td class="tg-0lax">When Harry met Sally</td>
-                            <td class="tg-0lax">Sally fakes an orgasm in a restaurant</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-0lax">Stress</td>
-                            <td class="tg-0lax">Irreversible</td>
-                            <td class="tg-0lax">Woman raped and brutally beaten</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-0lax">Boredom</td>
-                            <td class="tg-0lax">Merrified and Danckert</td>
-                            <td class="tg-0lax">Two men ironing clothes</td>
-                        </tr>
+                      <tr>
+                        <td class="tg-wa1i" rowspan="3"><span style="font-weight:400;color:#222">Speed</span></td>
+                        <td class="tg-yla0"><span style="font-weight:400;color:#222">S1</span></td>
+                        <td class="tg-yla0"><span style="font-weight:400;color:#222">Speed is set at 10 km/h.</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">S2</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">The speed is set at 15 km/h.</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">S3</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">The speed is set at 20 km/h.</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-nrix" rowspan="3"><span style="font-weight:400;color:#222">Music</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">M1</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">Song: Tusa by Karol G and Nicki Minaj</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">M2</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">Canción: Sex on Fire de Kings of Leon</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">M3</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">Song: You’ll Be Under My Wheels by The Prodigy</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-nrix" rowspan="3"><span style="font-weight:400;color:#222">Obstacles</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">O1</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">Less than 10 obstacles on the track</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">O2</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">Between 10 and 20 obstacles on the track</span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">O3</span></td>
+                        <td class="tg-cly1"><span style="font-weight:400;color:#222">Between 20 and 30 obstacles on the track</span></td>
+                      </tr>
                     </tbody>
-                </table>
+                    </table>
                 <br>
-                <h4 class="text-sentencecase"> Participants </h4>
-                <p> A sample of 22 subjects of Hispanic ethnicity participated in the study: 9 females
-                    and 13 males with a range from 18 to 62 years of age.</p>
-                <h4 class="text-sentencecase"> Procedure </h4>
-                <p> For the creation of the dataset, we proposed a technique that consisted of
-                    two sessions: spontaneous and acted. Firstly, the procedure of the experiment consisted in providing
-                    instructions to the participants about the session and how
-                    to position their middle and index phalanges over the GSR electrodes. During the session,
-                    participants watched a series of films (stimuli) while raw data was
-                    recorded –photos taken at 10 FPS and GSR recording at 10Hz.
-                </p>
-                <p> The below figure illustrates the sequence of spontaneous and acted sessions. Fig. (a)
-                    shows the spontaneous session; the stimuli consisted in the following sequence:
-                    Neutral −→ Stress −→ Neutral −→ Boredom −→ Neutral −→ Happy; where at the
-                    end of every stimuli, neutrality was induced to the participant to generate the
-                    correct desired emotion. Fig. (b) indicates the raw data taken in an interval
-                    of 30 seconds from the scene where the strongest emotion appeared. Fig. (c)
-                    facial expression and GSR reading captured at 10 FPS and Hz respectively
-                    for spontaneous emotion. For the acted emotions (Fig. bottom timeline),
-                    participants were instructed to carefully read the instructions for each emotion
-                    by performing the imitation during 10 seconds (Fig. (d)). Fig. (e) indicates
-                    the raw taken in an interval of 10 seconds. Fig. (f) facial expression and GSR
-                    reading captured at 10 FPS and Hz respectively for acted emotion
-                </p>
-                <p> The emotion classification was developed with MobileNet Architecture on TensorFlow; 1,840 images
-                    were used for the CNN, the images from
-                    the FER dataset were resized at 224 x 224 for the input layer, afterward CNN classified the images
-                    into 8 different classes: “Happy A”,“Happy S”, “Stress A”,
-                    “Stress S”, “Boredom A”, “Boredom S”, “Neutral A” and “Neutral S” (“ A”,
-                    stands for Acted emotion and “ S”, stands for spontaneous emotion). For the
-                    external images, a total of 80 images (10 images per class) were used to test the
-                    CNN; the images were taken from social networks sites, where users declared
-                    their emotional state.
-                </p>
+                <h5 class="text-sentencecase"> Design phase </h5>
+                <p>Next figure represents the user preferences process. First, the user enters a testing stage 
+                    and chooses an option to acquire his preferences, said preferences can be obtained from the 
+                    following options, Option 1: the user enters the test and, once in the test, selects the parameters 
+                    he/she finds satisfactory. Option 2: the user enters the test and once it is completed, 
+                    the user selects the preferred parameters.</p>
+                <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/" alt=""></center>                          
+                <p>Then the user’s preferences are obtained, the data is preprocessed. Here, a combination of the parameters 
+                    is assigned to a set of satisfaction states St={s0,s1,s2,…,s6}—states corresponding to the 
+                    Q-learning algorithm. Subsequently, a reward matrix is generated from the defined states. 
+                    The mapping of the states with the combination of the parameters is presented in the Table below.</p>
+                    <style type="text/css">
+                        .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+                        .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
+                          font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                        .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
+                          font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                        .tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}
+                        .tg .tg-0lax{text-align:left;vertical-align:top}
+                        .tg .tg-nrix{text-align:center;vertical-align:middle}
+                        </style>
+                        <table class="tg">
+                        <thead>
+                          <tr>
+                            <th class="tg-wa1i" rowspan="2"><span style="font-weight:700;color:#222">State</span></th>
+                            <th class="tg-wa1i" rowspan="2"><span style="font-weight:700;color:#222">Track</span></th>
+                            <th class="tg-wa1i" colspan="3"><span style="font-weight:700;color:#222">Parameters</span></th>
+                          </tr>
+                          <tr>
+                            <th class="tg-wa1i"><span style="font-weight:700;color:#222">Speed</span></th>
+                            <th class="tg-wa1i"><span style="font-weight:700;color:#222">Music</span></th>
+                            <th class="tg-wa1i"><span style="font-weight:700;color:#222">Number of Obstacles</span></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tg-0lax"><span style="text-decoration:none">S</span>0</td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">0</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">least preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">least preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">least preferred</span></td>
+                          </tr>
+                          <tr>
+                            <td class="tg-0lax"><span style="text-decoration:none">S</span>1</td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">1</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">least preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">least preferred</span></td>
+                          </tr>
+                          <tr>
+                            <td class="tg-0lax"><span style="text-decoration:none">S</span>2</td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">2</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">least preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                          </tr>
+                          <tr>
+                            <td class="tg-0lax"><span style="text-decoration:none">S</span>3</td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">3</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                          </tr>
+                          <tr>
+                            <td class="tg-0lax"><span style="text-decoration:none">S</span>4</td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">4</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">most preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                          </tr>
+                          <tr>
+                            <td class="tg-0lax"><span style="text-decoration:none">S</span>5</td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">5</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">most preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">most preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">neutral preferred</span></td>
+                          </tr>
+                          <tr>
+                            <td class="tg-0lax"><span style="text-decoration:none">S</span>6</td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">6</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">most preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">most preferred</span></td>
+                            <td class="tg-nrix"><span style="font-weight:400;color:#222">most preferred</span></td>
+                          </tr>
+                        </tbody>
+                        </table>
                 <br>
-                <center><img class="img-fluid w-70" src="img/portfolio/p_procedure.png" alt=""></center>
-                <h4 class="text-sentencecase"> Results and Discussion </h4>
-                <p> The classification of the trained dataset brings excellent results: training precision: 100%,
-                    validation accuracy: <mark>96.5%.</mark>
-                    On the other hand, the classification for external images with previously trained dataset shows an
-                    average poor performance
-                    of <mark>28.75%</mark>. To evaluate performance of MobileNet, we analyzed classifier based on
-                    confusion matrix analysis (fig. below),
-                    where a correct classification was done with an overall accuracy of <mark>94.6%</mark>.
+                        <h5 class="text-sentencecase"> Implementation phase </h5>
+                <p> Figure bellow illustrates the user’s profile acquisition interface, and also shows 
+                    a main rectangle (enclosed in blue) where the player chooses the speed, music, and 
+                    the number of obstacles. At the bottom of the same image, some buttons are observed wherein 
+                    “Main”, the instructions of the virtual environment are indicated; “Settings”, 
+                    user preferences configuration; “Controls”, the controls to move the cart; and “Credits”, 
+                    developer credits. The track interface Figure 15b presents in the upper right corner 
+                    feedback information to the user, such as time per lap, current time, and current lap number, 
+                    in the upper left corner we can find the collected coins and totals in the track.
                 </p>
-                <br>
-                <center><img class="img-fluid w-70" src="img/portfolio/p_confussion_matrix.png" alt=""></center>
-                <h4 class="text-sentencecase"> Conclusions </h4>
-                <p> A classifier of learn-related emotions is a powerful tool for intelligent learning
-                    environments, the recognition of emotional states could improve the reinforcement learning of a
-                    focus group for education (e.g., educational task and tools)
-                    and gaming (e.g., reaction on different levels of immersion). The contribution of
-                    this work lies on:
-                <ul class="list">
-                    <li><span> 1. A new technique to generate a dataset that employs effective
-                            stimuli for FER and GSR.</span> </li>
-                    <li><span> 2. Two dataset, FER: 1,840 facial expressions images;GSR: 1,548 registers –baseline
-                            difference between emotions and neutrality..</span></li>
-                    <li><span> 3. Trained model of spontaneous and acted emotions. </span></li>
-                    <li><span> 4. The possibility of GSR may enhance the classification of the CNN. </span></li>
-                </ul>
-                <br>
-                Future work will consist an including other emotions related to learning (e.g., confusion), as well as
-                incorporating the
-                GSR data into the RGB value channels of the trained images, furthermore,
-                re-train the CNN and contrast results.
+                <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/p-ux-vr-gameplay.png" alt=""></center>
+                <h4 class="text-sentencecase"> Results </h4>
+                <p> The results obtained from the implementation of the model were the product of three different 
+                    simulations. These simulations correspond to the user profile acquisition stage, 
+                    simulating that three users played during 5 min trials and defined the parameters of speed, 
+                    music, and the number of obstacles. These tests allowed validating the implementation within 
+                    the virtual environment of the RL algorithm.
                 </p>
+                <p> The following figure shows the transitions in each state, this depends on the Q-table which is a 
+                    function of the reward matrix. According to Figure, the user starts in state extremely unlikable 
+                    (S0) and has the possibility to go to state unlikable (S1) 
+                    or to state more or less unlikable (S2) because they have the minimum reward, 
+                    in S2 the algorithm has the option to stay in the same state or transition to 
+                    the state neutral (S3), and so on until it reaches the state extremely likable (S6).</p>
+                    <center><img class="img-fluid w-70" src="img/portfolio/ux-vr/p-ux-vr-results.png" alt=""></center>
+                    <p>This work presents a model to adapt virtual environments to users in order to get good experience
+                         with the technology. The model allows us to adjust a series of parameters of a virtual environment 
+                         using a reinforcement learning technique, which adapts to the user’s preferences. 
+                         The design of the phases of the model based on an MDA architecture is presented, 
+                         then in the implementation of the model a video game is developed, and the proposed 
+                         model is applied to a case study with simulations. Here, some advantages related to 
+                         current proposal.</p>
+                         <h4 class="text-sentencecase"> Conclusions </h4>
+                         <p> This work proposes a model under the MDA approach that offers developers and researchers 
+                            a means to establish the various levels of abstraction for adequate identification of 
+                            the profiles involved and thus define the development phases of the virtual environment 
+                            and the objectives. At the same time, this model proposes Reinforcement Learning as a 
+                            technique to offer a good user experience in virtual environments according to the player’s 
+                            preferences and the setting of parameters of the environment in a personal way. However, 
+                            future work is vast, and it is necessary to further emphasize the user-centered approach 
+                            to the design of the virtual environment, leading to its evaluation and feedback from users.
+                         </p>
             </div>
         </div>
     </section>
